@@ -32,5 +32,27 @@ public class Alumno
         notasAlumno.add(nota);
     }
     
+    /**
+     * Metodo usado para calcular la nota media de las notas.
+     */
+    public int mediaNotas()
+    {
+        int totNotas = 0;
+        int resultado = 0;
+        for (int i = 0; i < notasAlumno.size(); i++)
+        {
+            totNotas = totNotas + notasAlumno.get(i);
+        }
+        if(notasAlumno.size() != 0)
+        {
+            resultado = (totNotas/notasAlumno.size());
+        }
+        else
+        {
+            resultado = 0;
+        }
+        return resultado;
+    }
+
     
 }
