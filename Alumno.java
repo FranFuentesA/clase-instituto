@@ -12,7 +12,7 @@ public class Alumno
     private int numClase = 1;
     private ArrayListInt notasAlumno;
     private static final int NOTA_DE_APROBADO = 5;
-    
+
     /**
      * Constructor for objects of class Alumno
      */
@@ -31,11 +31,11 @@ public class Alumno
     {
         notasAlumno.add(nota);
     }
-    
+
     /**
      * Metodo usado para calcular la nota media de las notas.
      */
-    public int mediaNotas()
+    public float mediaNotas()
     {
         int totNotas = 0;
         int resultado = 0;
@@ -51,8 +51,18 @@ public class Alumno
         {
             resultado = 0;
         }
-        return resultado;
+        return (float)resultado;
     }
 
+    /**
+     *Metodo que calcula los aprobados en funcion de la nota media
+     */
+
+    public boolean aprobados()
+    {
+        return mediaNotas() >= NOTA_DE_APROBADO;
+    }
+
+    
     
 }
