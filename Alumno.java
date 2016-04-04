@@ -62,6 +62,14 @@ public class Alumno
     {
         return mediaNotas() >= NOTA_DE_APROBADO;
     }
+    
+    /**
+     *  Muestra los datos del alumno 
+     */
+    public String toString()
+    {
+      return ("Nombre: " + nombre + "edad: " + edad + "Numero de clase: " + numClase + "Notas: " + notasAlumno + "Media Notas: " + mediaNotas() + "Aprobados: " + aprobados()); 
+    }
 
     
     
