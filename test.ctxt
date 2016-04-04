@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=test()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ test\r\n
+comment1.params=
+comment1.target=java.lang.String\ asignaNombre()
+comment1.text=\r\n\ Metodo\ que\ crea\ nombres\ aleatroios\ para\ los\ alumnos\r\n
+comment2.params=
+comment2.target=int\ asignaEdad()
+comment2.text=\r\n\ Metodo\ que\ crea\ edades\ aleatorias\ para\ los\ alumnos\r\n
+comment3.params=alumno
+comment3.target=void\ asignaNotas(Alumno)
+comment3.text=\r\n\ Metodo\ que\ crea\ notas\ aleatorias\r\n
+numComments=4

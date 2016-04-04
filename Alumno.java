@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 /**
  * Write a description of class Alumno here.
@@ -9,7 +10,7 @@ public class Alumno
 {
     private String nombre;
     private int edad;
-    private int numClase = 1;
+    public int numClase = 1;
     private ArrayListInt notasAlumno;
     private static final int NOTA_DE_APROBADO = 5;
 
@@ -68,7 +69,12 @@ public class Alumno
      */
     public String toString()
     {
-      return ("Nombre: " + nombre + "edad: " + edad + "Numero de clase: " + numClase + "Notas: " + notasAlumno + "Media Notas: " + mediaNotas() + "Aprobados: " + aprobados()); 
+       String listaNotas = null;
+        for (int i = 0; i < notasAlumno.size(); i++) {
+             listaNotas += notasAlumno.get(i);
+        }
+       
+        return ("Nombre: " + nombre + " edad: " + edad + " Numero de clase: " + numClase + " Notas: " + listaNotas + " Media Notas: " + mediaNotas() + " Aprobados: " + aprobados()); 
     }
 
     
